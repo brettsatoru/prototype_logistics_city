@@ -1,2 +1,9 @@
-# prototype_logistics_city
-Working out the specifics of a stacked Logistics game.  Will likely model this more on a clicker with land management than anything else as a start.
+# Logistics City: Prototype
+
+This is a prototype of a new game concept, handling the City Management aspects of the concept.
+
+## Getting this going
+
+1. Download the code
+2. Open in Unity
+3. Run
