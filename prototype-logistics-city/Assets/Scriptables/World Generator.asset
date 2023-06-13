@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: World Generator
   m_EditorClassIdentifier: 
   BlankTile: {fileID: 3754484649536921126, guid: 1540a2e878a926642b84822a215be734, type: 3}
-  ForestTile: {fileID: 3754484649536921126, guid: 095af4965aab1504187796651b965549, type: 3}
+  ForestTile: {fileID: 8675768394648471248, guid: 279bd7fc9d7952b4e8c7ffb126453fa4, type: 3}
   forestTileWeight: 0.4
-  seed: 0
-  height: 15
+  seed: 538862943
+  height: 10
   width: 15
