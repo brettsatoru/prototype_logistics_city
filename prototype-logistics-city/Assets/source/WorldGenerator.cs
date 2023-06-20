@@ -16,7 +16,7 @@ public class WorldGenerator : ScriptableObject
     [SerializeField] int height;
     [SerializeField] int width;
 
-    public void GenerateWorld(Grid worldGrid)
+    public void GenerateWorld(Grid worldGrid, Action<Vector3Int, GameObject> prefabAction = null)
     {
         if (worldGrid == null) return;
         if (seed == 0)
@@ -37,7 +37,13 @@ public class WorldGenerator : ScriptableObject
                     prefab2Gen = ForestTile;
                 }
 
-                Instantiate(prefab2Gen, worldGrid.CellToWorld(new Vector3Int(x, y, 0)), Quaternion.identity);
+                var coord = new Vector3Int(x, y, 0);
+                var grid = Instantiate(prefab2Gen, worldGrid.CellToWorld(coord), Quaternion.identity);
+                if (prefabAction != null)
+                {
+                    // Do this in a task?
+                    prefabAction.Invoke(coord, grid);
+                }
             }
         }
     }

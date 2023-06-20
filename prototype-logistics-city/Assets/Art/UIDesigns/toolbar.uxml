@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="position: absolute; bottom: 0; justify-content: flex-end; align-items: center; flex-direction: column-reverse; background-color: rgb(128, 57, 0); top: auto; left: 20%; right: 20%;">
+        <ui:Button display-tooltip-when-elided="false" name="houseBtn" style="overflow: visible; position: relative; left: auto; top: auto; bottom: auto; flex-basis: auto; width: 64px; height: 64px; background-image: url(&apos;project://database/Assets/Art/RawImages/house-square.png?fileID=21300000&amp;guid=8370a5389ef00eb4fa403e6659148658&amp;type=3#house-square&apos;);" />
+    </ui:VisualElement>
+</ui:UXML>
